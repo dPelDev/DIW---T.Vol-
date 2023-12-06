@@ -1,3 +1,48 @@
+/* Traduccion */
+.traduccion {
+  margin: 10px;
+}
+.es {
+  color: #333;
+  font-family: "Girassol", cursive;
+}
+
+.en {
+  color: #00a1f0;
+  font-family: "Girassol", cursive;
+}
+.check {
+  position: relative;
+  width: 50px;
+}
+.check:before {
+  content: " ";
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  background-color: #333;
+  border-radius: 25px;
+}
+
+.check:after {
+  content: " ";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 25px;
+  transition: 0.25s;
+  border: solid 2px #333;
+  box-sizing: border-box;
+}
+.check:checked:after {
+  left: 25px;
+  border: 2px solid #00a1f0;
+}
+
+.check:checked:before {
+  background-color: #00a1f0;
+}
 /* Barra de navegacion */
 .navbar {
   padding: 2rem;
